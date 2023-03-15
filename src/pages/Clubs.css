@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    display: grid;
+    gap: 1.5rem 1.5rem;
+    margin: 1rem;
+    min-height: 600px;
+    transform: translate(2px 4px 4px);
+    box-shadow: 4px black ;
+}
+.clubHeading{
+    margin: 1.5rem;
+}
+button{
+    border-radius: 0.8rem;
+}
+.some{
+    background-image:url(./src/assets/trial7.svg);
+}
+.daksh{
+    background-image: url(./src/assets/trial5.svg);
+}
+.avishkar{
+    background-image: url(./src/assets/trial1.svg);
+}
+.perianth{
+    background-image: url(./src/assets/trial3.svg);
+}
+@media (min-width:900px){
+    .box{
+        display:grid;
+        gap:1.5rem 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .some{
+        grid-column: span 2;
+    }
+    .daksh{
+        grid-row: span 2;
+    }
+    
+}
+
